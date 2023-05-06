@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+      <div class="header">
+        <p>ALIMONEY</p>
+        <br>
+        <img src="sm.png" alt="image" id="pp">
+        <br>
+        <br>
+      </div>
+      <br>
+      <div class="email">
+          <input type="email" placeholder="Email/Username" id="email" required>
+      </div>
+      <br>
+      <div class="password">
+        <input type="password" placeholder="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more character" required>
+          <div id="eye-wrapper" onclick="toggle()">
+            <img src="eye-open-svgrepo-com.svg" id="open">
+            <img src="eye-close-svgrepo-com.svg" id="close">
+          </div>
+      </div>
+      <br>
+      <!-- <div class="submit">
+          <input type="submit" value="log in">
+      </div> -->
+      <a href="style.css"><button class="submit">LOG IN</button></a>
+      <br><br>
+
+      <div class="footer">
+        <h5>New here? <a href="#">Sign up</a> </h5>
+      </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
